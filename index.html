@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>Object Practice</title>
+
+    <style>
+        #container {
+            width: 100%;
+        }
+
+        #enter-scripture {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #enter-scripture h3 {
+            margin: 20px;
+        }
+
+        label,
+        input,
+        textarea {
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            border-radius: 4px;
+            width: 50%;
+            border: 1px lightgray solid;
+            height: 30px;
+        }
+
+        #scripture-text {
+            height: 100px;
+        }
+
+        #submit-verse {
+            color: black;
+            background-color: white;
+            height: 30px;
+        }
+
+        #submit-verse:hover {
+            border-color: black;
+            cursor: pointer;
+        }
+
+        table {
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        table th,
+        table td {
+            width: 25%;
+            border: solid 1px lightgray;
+            padding: 10px;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='container'>
+        <form id='enter-scripture'>
+            <h3>Add Your Favorite Biblical Scriptures</h3>
+            <label for='book'>Book
+                <br>
+                <input type='text' id='book'>
+            </label>
+            <br>
+
+            <label for='chapter'>Chapter Number
+                <br>
+                <input type='number' id='chapter-number'>
+            </label>
+            <br>
+
+            <label for='verse-number'>Verse Number
+                <br>
+                <input type='text' id='verse-number'>
+            </label>
+            <br>
+
+            <label for='scripture-text'>Scripture Text</label>
+            <br>
+            <textarea id='scripture-text'></textarea>
+            <br>
+
+            <input type='submit' value='submit' id='submit-verse'>
+        </form>
+        <table id='show-scriptures'>
+            <theader>
+                <tr>
+                    <th>Book</th>
+                    <th>Chapter</th>
+                    <th>Verse</th>
+                    <th>Scripture Text</th>
+                </tr>
+            </theader>
+
+            <tbody id='show-scriptures-body'>
+                <!-- 1st create a table row, then fill each cell one at a time. Each table row represents one verse-->
+
+
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src='scripture.js'></script>
+</body>
+
+</html>
