@@ -1,1 +1,1 @@
-# addScriptures
+Simple CRUD app using vanilla JavaScript
